@@ -14,7 +14,8 @@ app.get("/api/greeting", (req, res) => {
 });
 app.get("/api/tasks", async (req, res) => {
 
- const tasks = await prisma.task.findMany()
+  const tasks = await prisma.task.findMany()
+  
     res.status(200).send(tasks)
   
 });
