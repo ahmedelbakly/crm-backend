@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = "mongodb+srv://Elbakly:omar808dodo@cluster0.ohtyxs1.mongodb.net/coonex-crm?retryWrites=true&w=majority&appName=Cluster0"
+  url      = env("DATABASE_URL")
 }
 
 model Task {
