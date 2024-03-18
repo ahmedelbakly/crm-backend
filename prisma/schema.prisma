@@ -21,8 +21,8 @@ model Task {
   relatedTo   String?
   priority    String?
   description String?
-  endDate     DateTime?
-  startDate   DateTime?
+  endDate     DateTime? @db.Date
+  startDate   DateTime? @db.Date
   status      String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
